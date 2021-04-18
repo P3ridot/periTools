@@ -1,0 +1,8 @@
+chat:
+  chat-format:
+    default: "&7{PREFIX}{PLAYER}{SUFFIX}&8: &f{MESSAGE}"
+    vip: "&7{PREFIX}&6{PLAYER}{SUFFIX}&8: &f{MESSAGE}"
+    admin: "&7{PREFIX}&c{PLAYER}{SUFFIX}&8: &f{MESSAGE}"
+  format:
+    console: "{NAME}&r"
+    default: "{PREFIX}{DISPLAYNAME}{SUFFIX}&r"

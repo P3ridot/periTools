@@ -1,0 +1,32 @@
+inventories:
+  chat:
+    title: "&8» &7Zarzadzanie chatem"
+    size: 3
+    buttons:
+      background:
+        material: STAINED_GLASS_PANE
+        durability: 7
+        name: " "
+      clear:
+        slot: 10
+        material: PAPER
+        name: "&8» &3Wyczysc chat"
+        lore:
+          - "&8» &7Kliknij aby wyczyscic chat na serwerze"
+      enable:
+        slot: 13
+        material: STAINED_CLAY
+        durability: 13
+        name: "&8» &3Wlacz chat"
+        lore:
+          - "&8» &7Kliknij aby wlaczyc chat na serwerze"
+      disable:
+        slot: 16
+        durability: 14
+        material: STAINED_CLAY
+        name: "&8» &3Wylacz chat"
+        lore:
+          - "&8» &7Kliknij aby wylaczyc chat na serwerze"
+  trash:
+    title: "&8» &7Smietnik"
+    size: 6

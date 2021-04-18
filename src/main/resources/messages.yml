@@ -1,0 +1,474 @@
+messages:
+  status:
+    flying:
+      true: "&aON"
+      false: "&cOFF"
+    god:
+      true: "&aON"
+      false: "&cOFF"
+    socialspy:
+      true: "&aON"
+      false: "&cOFF"
+    commandsspy:
+      true: "&aON"
+      false: "&cOFF"
+    gamemode:
+      survival: "Przetrwanie"
+      creative: "Kreatywny"
+      adventure: "Przygodowy"
+      spectator: "Spektator"
+  errors:
+
+    #
+    #Simple Errors
+    #
+
+    simple:
+      correctusage:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Poprawne uzycie: &3{USAGE}"
+        actionbar:
+          enabled: true
+          content: "&8» &7Poprawne uzycie: &3{USAGE}"
+      noplayer.content: "&8» &7Tylko gracz moze uzyc tej komendy!"
+      noperm:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Nie posiadasz uprawnienia &3{PERMISSION}&7!"
+        title:
+          enabled: true
+          content: "&8» &c&lBrak uprawnien"
+          sub-content: "&8-- &7{PERMISSION} &8--"
+          fade-in: 10
+          stay: 40
+          fade-out: 10
+      not-number:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Wartosc &3{VALUE} &7nie jest liczba!"
+        actionbar:
+          enabled: true
+          content: "&8» &7Wartosc &3{VALUE} &7nie jest liczba!"
+      player-offline:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Gracz &3{PLAYER} &7jest offline!"
+        actionbar:
+          enabled: true
+          content: "&8» &7Gracz &3{PLAYER} &7jest offline!"
+      empty-hand:
+        actionbar:
+          enabled: true
+          content: "&8» &7Nie trzymasz zadnego przedmiotu w rece!"
+
+      #
+      #Errors for commands
+      #
+
+    commands:
+      broadcast:
+        nomessage:
+          chat:
+            send-if-not-player: true
+            content: "&8» &7Broadcast nie moze byc pusta!"
+          actionbar:
+            enabled: true
+            content: "&8» &7Broadcast nie moze byc pusta!"
+      gamemode:
+        invalidgamemode:
+          chat:
+            send-if-not-player: true
+            content: "&8» &7Niepoprawny tryb gry! Tryby gry do wyboru: &30/1/2/3"
+          actionbar:
+            enabled: true
+            content: "&8» &7Niepoprawny tryb gry! Tryby gry do wyboru: &30/1/2/3"
+      message:
+        nomessage:
+          chat:
+            send-if-not-player: true
+            content: "&8» &7Prywatna wiadomosc nie moze byc pusta!"
+          actionbar:
+            enabled: true
+            content: "&8» &7Prywatna wiadomosc nie moze byc pusta!"
+        noreceiver:
+          actionbar:
+            enabled: true
+            content: "&8» &7Nie masz komu odpisac!"
+      nick:
+        fake:
+          actionbar:
+            enabled: true
+            content: "&8» &7Nie mozesz ustawiac sobie nieprawdziwego nicku!"
+        fake-other:
+          chat:
+            send-if-not-player: true
+            content: "&8» &7Nie mozesz ustawiac nieprawdziwego nicku dla innych graczy!"
+          actionbar:
+            enabled: true
+            content: "&8» &7Nie mozesz ustawiac nieprawdziwego nicku dla innych graczy!"
+      spawn:
+        no-spawn-location:
+          chat:
+            send-if-not-player: true
+            content: "&8» &7Lokalizacja spawnu nie jest ustalona!"
+          actionbar:
+            enabled: true
+            content: "&8» &7Lokalizacja spawnu nie jest ustalona!"
+      sudo:
+        nocontent:
+          chat:
+            send-if-not-player: true
+            content: "&8» &7Tresc nie moze byc pusta!"
+          actionbar:
+            enabled: true
+            content: "&8» &7Tresc nie moze byc pusta!"
+      tpaccept:
+        target-not-asking:
+          actionbar:
+            enabled: true
+            content: "&8» &7Gracz &3{PLAYER} &7nie pyta sie ciebie o zgode na teleportacje!"
+        no-asking-player:
+          actionbar:
+            enabled: true
+            content: "&8» &7Nikt nie chce od ciebie zgody na teleportacje!"
+      tpdeny:
+        target-not-asking:
+          actionbar:
+            enabled: true
+            content: "&8» &7Gracz &3{PLAYER} &7nie pyta sie ciebie o zgode na teleportacje!"
+        no-asking-player:
+          actionbar:
+            enabled: true
+            content: "&8» &7Nikt nie chce od ciebie zgody na teleportacje!"
+
+  #
+  #Messages for commands
+  #
+
+  commands:
+    broadcast:
+      sent:
+        chat:
+          enabled: true
+          content: "&8» &7Wyslano globalna wiadomosc na serwer!"
+      chat-format:
+        chat:
+          enabled: true
+          content: "&3Uwaga &8» &7{MESSAGE}"
+      title-format:
+        title:
+          enabled: true
+          content: "&7{MESSAGE}"
+          sub-content: "&8-- &3Uwaga &8--"
+          fade-in: 10
+          stay: 40
+          fade-out: 10
+      subtitle-format:
+        title:
+          enabled: true
+          content: "&8-- &3Uwaga &8--"
+          sub-content: "&7{MESSAGE}"
+          fade-in: 10
+          stay: 40
+          fade-out: 10
+      actionbar-format:
+        actionbar:
+          enabled: true
+          content: "&3Uwaga &8» &7{MESSAGE}"
+    chat:
+      cleared:
+        chat:
+          enabled: true
+          content:
+            - " "
+            - " &8» &7Chat zostal &bwyczyszczony &7przez &3{ADMIN}&7!"
+            - " "
+      enabled:
+        chat:
+          enabled: true
+          content:
+            - " "
+            - " &8» &7Chat zostal &awlaczony &7przez &3{ADMIN}&7!"
+            - " "
+      disabled:
+        chat:
+          enabled: true
+          content:
+            - " "
+            - " &8» &7Chat zostal &cwylaczony &7przez &3{ADMIN}&7!"
+            - " "
+    commandsspy:
+      status:
+        enabled: "&aWlaczony"
+        disabled: "&cWylaczony"
+      changed:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7CommandsSpy zostal: &3{STATUS}&7!"
+        actionbar:
+          enabled: true
+          content: "&8» &7CommandsSpy zostal: &3{STATUS}&7!"
+      log:
+        chat:
+          enabled: true
+          content: "&8[&4CS&8] &7{PLAYER} &8» &f{COMMAND}"
+    feed:
+      fed-own:
+        actionbar:
+          enabled: true
+          content: "&8» &7Nakarmiles siebie!"
+      fed-other:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Nakarmiles gracza &3{PLAYER}&7!"
+        actionbar:
+          enabled: true
+          content: "&8» &7Nakarmiles gracza &3{PLAYER}&7!"
+      fed-by-other:
+        actionbar:
+          enabled: true
+          content: "&8» &7Zostales przez kogos nakarmiony&7!"
+    gamemode:
+      mode:
+        survival: "Przetrwanie"
+        creative: "Kreatywny"
+        adventure: "Przygodowy"
+        spectator: "Spektator"
+      changed-own:
+        actionbar:
+          enabled: true
+          content: "&8» &7Zmieniles swoj tryb gry na: &3{GAMEMODE}&7!"
+      changed-other:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Zmieniles tryb gry gracza &3{PLAYER} &7na: &3{GAMEMODE}&7!"
+        actionbar:
+          enabled: true
+          content: "&8» &7Zmieniles tryb gry gracza &3{PLAYER} &7na: &3{GAMEMODE}&7!"
+      changed-by-other:
+        actionbar:
+          enabled: true
+          content: "&8» &7Twoj tryb gry zostal zmieniony na: &3{GAMEMODE}&7!"
+    hat:
+      changed:
+        actionbar:
+          enabled: true
+          content: "&8» &7Ciesz sie teraz swoja nowa czapka!"
+    heal:
+      healed-own:
+        actionbar:
+          enabled: true
+          content: "&8» &7Uleczyle siebie&7!"
+      heal-other:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Uleczyles gracza &3{PLAYER}&7!"
+        actionbar:
+          enabled: true
+          content: "&8» &7Uleczyles gracza &3{PLAYER}&7!"
+      healed-by-other:
+        actionbar:
+          enabled: true
+          content: "&8» &7Zostales przez kogos uleczony!"
+    message:
+      sender:
+        chat:
+          enabled: true
+          content: "&3Ja &8-> &3{RECEIVER-FORMAT} &8» &7{MESSAGE}"
+      receiver:
+        chat:
+          enabled: true
+          content: "&3{SENDER-FORMAT} &8-> &3Ja &8» &7{MESSAGE}"
+    nick:
+      changed-own:
+        actionbar:
+          enabled: true
+          content: "&8» &7Zmieniles swoj nick! Od teraz nazywasz sie: &r{NEWNICKNAME}&7!"
+      changed-other:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Zmieniles nick gracza &3{PLAYER}&7! Od teraz nazywa sie on: &r{NEWNICKNAME}&7!"
+        actionbar:
+          enabled: true
+          content: "&8» &7Zmieniles nick gracza &3{PLAYER}&7! Od teraz nazywa sie on: &r{NEWNICKNAME}&7!"
+      changed-by-other:
+        actionbar:
+          enabled: true
+          content: "&8» &7Ktos zmienil twoj nick! Od teraz nazywasz sie: &r{NEWNICKNAME}&7!"
+    setspawn:
+      setted:
+        actionbar:
+          enabled: true
+          content: "&8» &7Lokalizacja spawna zostala ustawiona na &3{X}, {Y}, {Z} &7w swiecie &3{WORLD}&7!"
+    socialspy:
+      status:
+        enabled: "&aWlaczony"
+        disabled: "&cWylaczony"
+      changed:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7SocialSpy zostal: &3{STATUS}&7!"
+        actionbar:
+          enabled: true
+          content: "&8» &7SocialSpy zostal: &3{STATUS}&7!"
+      log:
+        chat:
+          enabled: true
+          content: "&8[&4SS&8] &7{FROM} &8-> &7{TO} &8» &f{MESSAGE}"
+    spawn:
+      teleported-own:
+        actionbar:
+          enabled: true
+          content: "&8» &7Przeteleportowales sie na spawn!"
+      teleport-other:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Przeteleportowales gracza &3{PLAYER} &7na spawn&7!"
+        actionbar:
+          enabled: true
+          content: "&8» &7Przeteleportowales gracza &3{PLAYER} &7na spawn&7!"
+      teleported-by-other:
+        actionbar:
+          enabled: true
+          content: "&8» &7Zostales przez kogos przeteleportowany na spawn!"
+      teleporting:
+        actionbar:
+          enabled: true
+          content: "&8» &7Zostaniesz przeteleportowany na spawn za: &3{TIME} &8| &7Nie ruszaj sie!"
+      teleport-cancelled:
+        actionbar:
+          enabled: true
+          content: "&8» &7Ruszyles sie! Teleportacja zostala przerwana!"
+    staff:
+      help:
+        chat:
+          enabled: true
+          content:
+            - "&8» &3/{LABEL} reload &8- &7przeladowuje konfiguracje pluginu"
+      configuration_reloaded:
+        chat:
+          send-if-not-player: true
+          content: "&9periTools &8» &7Konfiguracja pluginu zostala przeladowana!"
+        actionbar:
+          enabled: true
+          content: "&9periTools &8» &7Konfiguracja pluginu zostala przeladowana!"
+    sudo:
+      command:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Uzyles komendy &3/{COMMAND} &7jako &3{PLAYER}&7!"
+        actionbar:
+          enabled: true
+          content: "&8» &7Uzyles komendy &3/{COMMAND} &7jako &3{PLAYER}&7!"
+      chat:
+        chat:
+          send-if-not-player: true
+          content: "&8» &7Wyslales wiadomosc &3{MESSAGE} &7jako &3{PLAYER}&7!"
+        actionbar:
+          enabled: true
+          content: "&8» &7Wyslales wiadomosc &3{MESSAGE} &7jako &3{PLAYER}&7!"
+    tpaccept:
+      accepted:
+        actionbar:
+          enabled: true
+          content: "&8» &7Zaakceptowales prosbe o teleportacje gracza &3{PLAYER}&7!"
+    tpa:
+      sender:
+        actionbar:
+          enabled: true
+          content: "&8» &7Wyslales prosbe o teleportacje do gracza &3{PLAYER}&7!"
+      receiver:
+        chat:
+          enabled: true
+          content:
+            - "&7Otrzymales prosbe o teleportacje do ciebie od gracza &3{PLAYER}"
+            - "&7Wpisz: "
+            - "&8» &9/tpaccept &8- &7jesli chcesz zaakceptowac prosbe"
+            - "&8» &9/tpdeny &8- &7jesli chcesz odrzucic prosbe"
+            - "&7Masz &3{TIME} &7sekund na zaakceptowanie prosby. Po tym czasie prosba wygasnie"
+      teleported:
+        actionbar:
+          enabled: true
+          content: "&8» &7Przeteleportowales sie do gracza &3{PLAYER}&7!"
+      teleporting:
+        actionbar:
+          enabled: true
+          content: "&8» &7Zostaniesz przeteleportowany do gracza &3{PLAYER} &7za: &3{TIME} &8| &7Nie ruszaj sie!"
+      teleport-cancelled:
+        actionbar:
+          enabled: true
+          content: "&8» &7Ruszyles sie! Teleportacja zostala przerwana!"
+    tpdeny:
+      denied:
+        actionbar:
+          enabled: true
+          content: "&8» &7Odrzuciles prosbe o teleportacje gracza &3{PLAYER}&7!"
+      denied-asker:
+        actionbar:
+          enabled: true
+          content: "&8» &7Twoja prosba o teleportacje zostala odrzucona przez &3{PLAYER}&7!"
+    tpahere:
+      sender:
+        actionbar:
+          enabled: true
+          content: "&8» &7Wyslales prosbe o teleportacje gracza &3{PLAYER} &7do siebie!"
+      receiver:
+        chat:
+          enabled: true
+          content:
+            - "&7Otrzymales prosbe o teleportacje do gracza &3{PLAYER}"
+            - "&7Wpisz: "
+            - "&8» &9/tpaccept &8- &7jesli chcesz zaakceptowac prosbe"
+            - "&8» &9/tpdeny &8- &7jesli chcesz odrzucic prosbe"
+            - "&7Masz &3{TIME} &7sekund na zaakceptowanie prosby. Po tym czasie prosba wygasnie"
+      teleported:
+        actionbar:
+          enabled: true
+          content: "&8» &7Przeteleportowales sie do gracza &3{PLAYER}&7!"
+      teleporting:
+        actionbar:
+          enabled: true
+          content: "&8» &7Zostaniesz przeteleportowany do gracza &3{PLAYER} &7za: &3{TIME} &8| &7Nie ruszaj sie!"
+      teleport-cancelled:
+        actionbar:
+          enabled: true
+          content: "&8» &7Ruszyles sie! Teleportacja zostala przerwana!"
+
+    items:
+      addlore:
+        added:
+          actionbar:
+            enabled: true
+            content: "&8» &7Dodales: &r{LORE} &7do opisu przedmiotu!"
+      changelore:
+        changed:
+          actionbar:
+            enabled: true
+            content: "&8» &7Zmieniles linijke &3{LINE} &7w opisie przedmiotu trzymanego w rece na: &r{LORE}&7!"
+      relore:
+        relored:
+          actionbar:
+            enabled: true
+            content: "&8» &7Zmieniles opis przedmiotu trzymanego w rece na: &r{LORE}&7!"
+      removelore:
+        removed:
+          actionbar:
+            enabled: true
+            content: "&8» &7Usunales linijke &3{LINE} &7z opisu przedmiotu trzymanego w rece&7!"
+      rename:
+        renamed:
+          actionbar:
+            enabled: true
+            content: "&8» &7Zmieniles nazwe przedmiotu trzymanego w rece na: &r{NAME}&7!"
+      resetlore:
+        reseted:
+          actionbar:
+            enabled: true
+            content: "&8» &7Usunales opis z trzymanego w rece przedmiotu!"
+      resetname:
+        reseted:
+          actionbar:
+            enabled: true
+            content: "&8» &7Usunales nazwe z trzymanego w rece przedmiotu!"
+

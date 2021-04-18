@@ -1,0 +1,15 @@
+config:
+  format:
+    date: "dd/MM/yyyy HH:mm"
+    decimal: "#.##"
+  teleport-delay:
+    spawn: 5
+    warp: 5
+    home: 5
+    tpa: 5
+    tpahere: 5
+    tp: 5
+    tphere: 5
+  accept-time:
+    tpa: 120
+    tpahere: 120

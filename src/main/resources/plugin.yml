@@ -1,0 +1,15 @@
+name: periTools
+author: Peridot
+version: 1.0
+main: me.peridot.peritools.PeriTools
+website: mlgroup.pl
+softdepend: [Vault, PlaceholderAPI]
+
+permissions:
+  peritools.cmd.gamemode.*:
+    default: op
+    children:
+      peritools.cmd.gamemode.survival: true
+      peritools.cmd.gamemode.creative: true
+      peritools.cmd.gamemode.adventure: true
+      peritools.cmd.gamemode.spectator: true
